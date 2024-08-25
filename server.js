@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 
-app.use('/bfhl', bfhlRoutes);
+app.use('/', bfhlRoutes);
 
 const PORT =  3000
 app.listen(PORT, ()=>{
