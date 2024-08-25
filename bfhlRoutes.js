@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.post('/', (req, res) =>{
+router.post('/bfhl', (req, res) =>{
     const data = req.body.data;
     const fullName = "Harshit_Singh";
     const dob = "21012003"; 
@@ -36,7 +36,7 @@ router.post('/', (req, res) =>{
     res.json(response);
 });
 
-router.get('/', (req, res) => {
+router.get('/bfhl', (req, res) => {
     res.status(200).json({ "operation_code": 1 });
 });
 
